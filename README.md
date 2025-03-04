@@ -15,9 +15,9 @@ This project is a simple blog API built with FastAPI.
 
 ## Installation
 
-Install the required packages using the following command:
+Use `uv` to install the required packages with the following command:
 ```
-pip install fastapi uvicorn
+uv install
 ```
 
 ## Running the Application
@@ -27,6 +27,18 @@ To run the application, use the following command:
 uvicorn main:app --reload
 ```
 The `--reload` flag enables auto-reloading so the server will restart after code changes.
+
+## Linting with Ruff
+
+To lint the application code, run:
+```
+ruff src/
+```
+To automatically fix linting issues, run:
+```
+ruff src/ --fix
+```
+Replace `src/` with the actual path to your source code if it's different.
 
 ## Endpoints
 
