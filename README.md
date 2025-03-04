@@ -17,28 +17,17 @@ This project is a simple blog API built with FastAPI.
 
 Use `uv` to install the required packages with the following command:
 ```
-uv install
+just install
 ```
 
 ## Running the Application
 
 To run the application, use the following command:
 ```
-uvicorn main:app --reload
+just dev
 ```
 The `--reload` flag enables auto-reloading so the server will restart after code changes.
 
-## Linting with Ruff
-
-To lint the application code, run:
-```
-ruff src/
-```
-To automatically fix linting issues, run:
-```
-ruff src/ --fix
-```
-Replace `src/` with the actual path to your source code if it's different.
 
 ## Endpoints
 
@@ -50,7 +39,7 @@ Replace `src/` with the actual path to your source code if it's different.
 
 Run tests using pytest:
 ```
-pytest
+just test
 ```
 
 ## Development Notes

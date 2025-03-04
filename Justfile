@@ -7,8 +7,11 @@ set dotenv-filename := ".env"
 # set dotenv-filename := ".env.intel"
 set export
 
-setup:
-  uv 
+install:
+  uv sync --frozen --no-cache
+
+test:
+  pytest
 
 dev:
   uvx uvicorn main:app --reload
