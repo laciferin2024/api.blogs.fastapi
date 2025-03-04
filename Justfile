@@ -14,7 +14,7 @@ test:
   pytest
 
 dev:
-  uvx uvicorn main:app --reload
+  uvicorn main:app --reload;
 
 deps:
   uv pip freeze > requirements.txt
